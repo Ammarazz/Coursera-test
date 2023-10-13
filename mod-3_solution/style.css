@@ -1,1 +1,55 @@
 
+
+.navbar {
+    background-color: grey; /* Customize the background color of the navbar */
+    margin-bottom: 0;
+    border: black;
+}
+
+.navbar-brand {
+    color: black; /* Customize the text color of the company name */
+}
+
+.navbar-nav li a {
+    color: black;
+     /* Customize the text color of the menu items */
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white; /* Customize the color of the mobile menu icon bars */
+}
+
+.container .text-centre {
+    margin-top: 30px;
+}
+
+.content {
+    background-color: grey; /* Customize the background color of the content section */
+    padding: 20px;
+    min-height: 100px; /* Adjust the height as needed */
+
+}
+   /* Custom CSS for the dropdown menu */
+        .custom-dropdown {
+            position: absolute;
+            background-color: white; /* Background color for the dropdown menu */
+            width:100%; /* Full width of the browser window */
+            /*z-index: 1; /* Ensure it appears above other content */
+            display: none; /* Initially hide the dropdown */
+        }
+        .custom-dropdown a {
+            color: black; /* Text color for menu items */
+        }
+.custom-dropdown li a{
+    text-align: center;
+}
+.custom-dropdown li{
+    background-color: white;
+}
+.content h2{
+    text-align: center;
+}
+.col-xs-12{
+    align-content: center;
+}
+
