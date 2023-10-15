@@ -129,13 +129,25 @@ function buildAndShowHomeHTML (categories) {
 
 
 // Given array of category objects, returns a random category object.
-function chooseRandomCategory (categories) {
+// function chooseRandomCategory (categories) {
   // Choose a random index into the array (from 0 inclusively until array length (exclusively))
-  var randomArrayIndex = Math.floor(Math.random() * categories.length);
+//  var randomArrayIndex = Math.floor(Math.random() * categories.length);
 
   // return category object with that randomArrayIndex
-  return categories[randomArrayIndex];
+//  return categories[randomArrayIndex];
 }
+  // Define a function to load a random category menu
+$dc.loadRandomCategoryMenu = function () {
+  // Define an array of possible category short_names
+  var categories = ["Lunch", "Dinner", "Sushi", /* Add other categories here */];
+
+  // Select a random category from the array
+  var randomCategoryShortName = categories[Math.floor(Math.random() * categories.length)];
+
+  // Call the function to load menu items for the random category
+  $dc.loadMenuItems(randomCategoryShortName);
+};
+
 
 
 // Load the menu categories view
